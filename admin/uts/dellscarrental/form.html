@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pemesanan Rental Mobil</title>
+</head>
+<body>
+    <fieldset>
+        <legend>Form Pemesanan></legend>
+
+        <h1>Selamat Datang di Dell's Car Rental</h1>
+        <p>Silakan isi pesanan anda di sini!</p>
+
+        <form action="thanks.html">
+            <table>
+                <thead>
+                    <tr>
+                        <td>
+                            Informasi Anda
+                        </td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><label for="nama">Nama :</label> </td>
+                        <td><input type="text" id="nama" name="nama" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="alamat">Alamat :</label> </td>
+                        <td><input type="text" id="alanat" name="alamat" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="notelp">No Telepon :</label> </td>
+                        <td><input type="number" id="notelp" name="notelp" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="Email">Email :</label> </td>
+                        <td><input type="email" id="Email" name="Email" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="nama">Notes Pemesanan :</label> </td>
+                        <td><textarea name="note" id="note" 
+                        required placeholder="Tidak lebih dari 400 karakter"></textarea></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h4>Pilih Salah Satu</h4>
+
+            <label for="car"> Jenis Mobil </label><br>
+
+            <input type="radio" id="car" name="car" value="cs">
+            <label for="cs">Pajero Sport</label><br>
+            <input type="radio" id="car" name="car" value="mg">
+            <label for="mg">Civic Type R</label><br>
+            <input type="radio" id="car" name="car" value="cf"> 
+            <label for="cf">Jeep</label><br>
+            <input type="radio" id="car" name="car" value="gf">
+            <label for="gf">Honda HR-V</label><br>
+            <input type="radio" id="car" name="car" value="gf">
+            <label for="gf">Jenis lain bisa dituliskan di notes.</label><br>
+
+
+            <h4>Number</h4>
+            <label for="">Jumlah hari :</label>
+            <input type="number" min="1" max="10">
+            <br>
+
+            <button type="submit" value="pesan">Pesan Sekarang</button>
+            <button type="reset" value="reset">reset</button>
+
+        </form>
+    </fieldset>
+</body>
+</html>
